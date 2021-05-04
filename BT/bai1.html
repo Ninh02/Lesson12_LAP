@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai1</title>
+</head>
+<body>
+<script>
+    let c;
+    c="<table border='1' width='800'>";
+    for (a=1;a<=9;a++){
+        c=c+"<tr>";
+        for (b=2;b<=9;b++){
+            c=c+"<td>"+b+"x"+a+"="+a*b+"</td>";
+        }
+        c=c+"</tr>";
+    }
+    c=c+"</table>";
+    document.write(c);
+</script>
+
+</body>
+</html>

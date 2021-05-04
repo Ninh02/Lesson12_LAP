@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai2</title>
+</head>
+<body>
+<script>
+    let a=prompt('nhap so luong so nguyen to');
+    let count=1;
+    let N=2;
+    let issonguyento=true;
+    while (count<a) {
+        for (let j = 2; j < N; j++) {
+            if (N % j == 0) {
+                issonguyento = false;
+                break;
+            }
+        }if(issonguyento){
+            count++;
+            document.write(N+"<br>");
+        }
+        N++;
+    issonguyento=true;
+    }
+</script>
+
+</body>
+</html>
