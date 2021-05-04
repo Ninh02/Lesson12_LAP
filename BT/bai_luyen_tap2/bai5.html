@@ -7,17 +7,19 @@
 <body>
 <script>
     let a=prompt('nhap so tien ban dau a la');
+    a=parseInt(a);
     let b=prompt('nhap so thang cho vay b la');
+    b=parseInt(b);
     let c=prompt('lai suat hang thang c la');
-    let B=0;
+    c=parseFloat(c);
+    let temp=0;
     let F;
-    let i=1;
-    while(i<=b){
-        F=a*c/100;
+    for(let i=1;i<=b;i++){
+        F=(a*c)/100;
+       temp = temp+F;
         a+=F;
-        i++;
     }
-    document.write("lai ngan hang="+a);
+    document.write("lai ngan hang=" + temp);
 </script>
 
 </body>
